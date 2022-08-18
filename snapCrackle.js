@@ -14,8 +14,8 @@ function snapCrackle(maxValue){
                     lista.push(" " + i);
                 }
     }
-    return lista;
+    return lista.toString();
 }
 
-let resultado = snapCrackle(35);
-console.log(resultado.toString());
+let resultado = snapCrackle(30);
+console.log(resultado);
