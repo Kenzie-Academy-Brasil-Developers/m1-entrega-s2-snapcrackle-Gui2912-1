@@ -1,7 +1,7 @@
 function snapCrackle(maxValue){
     let lista = [];
     for(let i = 1; i <= maxValue; i++){
-        if(i % 5 == 0 && i % 3 == 0){
+        if(i % 5 == 0 && i % 2 != 0){
             lista.push(" SnapCrackle")
         }else
         if(i % 5 == 0){
@@ -14,7 +14,7 @@ function snapCrackle(maxValue){
                     lista.push(" " + i);
                 }
     }
-    return lista.toString();
+    return lista.join(',');
 }
 
 let resultado = snapCrackle(50);
